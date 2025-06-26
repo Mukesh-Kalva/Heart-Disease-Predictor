@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #bdcebe;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
+  gap: 20px;
+}
+
+.form-container {
+  width: 100%;
+  text-align: left;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.2em;
+  font-style: italic;
+  font-weight: bold;
+  color: #333;
+  text-shadow: 1px 1px #ff0000;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+h3 {
+  text-align: center;
+  color: green;
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  input,
+  select {
+    font-size: 1em;
+  }
+
+  button {
+    font-size: 1em;
+  }
+}
